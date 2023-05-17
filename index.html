@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confira o Clima</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="Script.js"></script>
+    <!-- Link FA -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+    <!-- Link FA -->
+</head>
+<body>
+<div class="conteiner" id="conteiner">
+    <div class="form">
+        <h3>Confira o clima de uma cidade: </h3>
+        <div class="form-input-conteiner">
+            <input type="text" placeholder="Digite o nome da Cidade: " id="City-input">
+            <button id="search" onclick="novaDiv()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" style="fill: rgb(253, 253, 253);transform: msFilter"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+                <i class="fa-solid fa-magnifying-class"></i>
+            </button>
+        </div>
+    </div>
+
+
+    <div id="weather-data">
+        <h2>
+            <i class="fa-solid fan-location-dot"></i>
+            <span id="city">Fortaleza</span>
+            <img 
+             
+            src="https://flagsapi.com/:country_code/flat/32.png">
+        </h2>
+        <p id="Temperatura"><span>31</span>&deg;c</p>
+    </div>
+
+    <div class="conteiner" id="description-container">
+        <p id="description">Nublado</p>
+        <img src="http://openweathermap.org/img/wn/01d.png" alt="Condicoes do tempo" id="weather-icon"/>
+    </div>
+    <div class="conteiner" id="detals-container">
+        <p id="unidity">
+            <i class="fa-solid fa-droplet"></i>
+            <span>60%</span>
+            </p>
+            <i class="fa-solid fa-wind"></i>
+            <span>5km/h</span>
+
+
+    </div>
+</div>
+</body>
+</html>

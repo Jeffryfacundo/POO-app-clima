@@ -41,7 +41,7 @@ function novaDiv() {
     document.getElementById("search").disabled = true;
   
     botao.addEventListener("click", function () {
-      alert("Salvo!");
+      alert("Endereço Salvo!");
       botao.disabled = true;
     });
   }
